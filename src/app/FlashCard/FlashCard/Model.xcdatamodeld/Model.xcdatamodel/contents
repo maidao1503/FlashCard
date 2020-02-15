@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G3020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName="Card" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="img" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="tid" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vocal" optional="YES" attributeType="String"/>
+        <relationship name="fk_topic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Topic" inverseName="fk_cards" inverseEntity="Topic"/>
+    </entity>
+    <entity name="Topic" representedClassName="Topic" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="topicImg" optional="YES" attributeType="String"/>
+        <attribute name="topicLab" optional="YES" attributeType="String"/>
+        <relationship name="fk_cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="fk_topic" inverseEntity="Card"/>
+    </entity>
+    <elements>
+        <element name="Card" positionX="-11.16015625" positionY="144.62109375" width="128" height="133"/>
+        <element name="Topic" positionX="-272.45703125" positionY="124.1328125" width="128" height="103"/>
+    </elements>
+</model>
