@@ -8,15 +8,15 @@
     - Flashcard is a learning method to memory using small cards with hint in a frontside and the answer in the backside. It's very popular especially in learning vocabulary. With this application, we would like to bring physical cards into digital cards then users can learn everywhere with their mobile.
 
 - Implemented features 
-    View list of topics
-    Learn words in aÊ topic
-    Memory words through mini game
-    Manage your own topics
+    - View list of topics
+    - Learn words in aÊ topic
+    - Memory words through mini game
+    - Manage your own topics
 
 - Used frameworks
-    UIKIT
-    CORE DATA
-    AVFoundation
+    - UIKIT
+    - CORE DATA
+    - AVFoundation
 
 - Required permissions 
-    Access Photo, Notification (Next step)
+    - Access Photo, Notification (Next step)
